@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1 class="generator-title">Box Shadow Generator</h1>
+<div class="row">
+    <div class="left-side">
+        <label for="r1">Elements Border Radius</label>
+        <input type="range" id="r1" value="0" max="50">
+        <label for="offsetX">Offset X</label>
+        <input type="range" id="offsetX" min="-50" max="50" value="0">
+        <label for="offsetY">Offset Y</label>
+        <input type="range" id="offsetY" min="-50" max="50" value="0">
+        <label for="blur">Blur Radius</label>
+        <input type="range" id="blur" max="50" value="0">
+        <label for="spread">Spread Radius</label>
+        <input type="range" id="spread" min="-30" max="50" value="0">
+        <label for="color">Shadow Color</label>
+        <input type="color" id="color" value="#9A9898">
+        <label for="bg-color">Elements Color</label>
+        <input type="color" id="bg-color" value="#82a8e6">
+        <div class="inset-shadow">
+            <label for="inset">Inset</label>
+            <input type="radio" id="inset" name="radio" checked>
+            <label for="outset">Outset</label>
+            <input type="radio" id="outset" name="radio">
+        </div>
+
+    </div>
+    <div class="right-side">
+        <div class="parent-box">
+            <div class="box"></div>
+        </div>
+        <div class="shadow-result-box"><span class="shadow-result"></span></div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
