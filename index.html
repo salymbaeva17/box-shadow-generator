@@ -5,43 +5,117 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Box-Shadow Generator</title>
+    <link rel="icon" href="./images/logo.png">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h1 class="generator-title">Box Shadow Generator</h1>
-<div class="row">
-    <div class="left-side">
-        <label for="r1">Elements Border Radius</label>
-        <input type="range" id="r1" value="0" max="50">
-        <label for="offsetX">Offset X</label>
-        <input type="range" id="offsetX" min="-50" max="50" value="0">
-        <label for="offsetY">Offset Y</label>
-        <input type="range" id="offsetY" min="-50" max="50" value="0">
-        <label for="blur">Blur Radius</label>
-        <input type="range" id="blur" max="50" value="0">
-        <label for="spread">Spread Radius</label>
-        <input type="range" id="spread" min="-30" max="50" value="0">
-        <label for="color">Shadow Color</label>
-        <input type="color" id="color" value="#9A9898">
-        <label for="bg-color">Elements Color</label>
-        <input type="color" id="bg-color" value="#82a8e6">
-        <div class="inset-shadow">
-            <label for="inset">Inset</label>
-            <input type="radio" id="inset" name="radio" checked>
-            <label for="outset">Outset</label>
-            <input type="radio" id="outset" name="radio">
-        </div>
-
+<header class="header">
+    <div class="header__container container">
+        <h3 class="header__title">Box Shadow Generator</h3>
+        <nav class="header__navbar">
+            <a href="https://github.com/salymbaeva17" class="header__btn">
+                <i class='bx bxl-github bx-md bx-burst-hover header__btn--color'></i>
+            </a>
+        </nav>
     </div>
-    <div class="right-side">
-        <div class="parent-box">
-            <div class="box"></div>
-        </div>
-        <div class="shadow-result-box"><span class="shadow-result"></span></div>
-    </div>
-</div>
+</header>
 
+<main>
+    <section class="generate">
+        <div class="generate__container container">
+            <div class="row generate__row">
+                <div class="generate__left-side col-4">
+                    <h1 class="generate__title">Set your generator shadows:</h1>
+
+                    <p class="generate__settings-title">Elements Border Radius</p>
+                    <div class="input__box">
+                        <input type="range" id="r1" value="0" class="input__value" max="50">
+                        <label for="r1"></label>
+                    </div>
+
+                    <p class="generate__settings-title">Offset X</p>
+                    <div class="input__box">
+                        <input type="range" id="offsetX" min="-50" class="input__value" max="50" value="0">
+                        <label for="offsetX"></label>
+                    </div>
+
+                    <p class="generate__settings-title">Offset Y</p>
+                    <div class="input__box">
+                        <input type="range" id="offsetY" min="-50" class="input__value" max="50" value="0">
+                        <label for="offsetY"></label>
+                    </div>
+
+                    <p class="generate__settings-title">Blur Radius</p>
+                    <div class="input__box">
+                        <input type="range" id="blur" class="input__value" max="50" value="0">
+                        <label for="blur"></label>
+                    </div>
+
+                    <p class="generate__settings-title">Spread Radius</p>
+                    <div class="input__box">
+                        <input type="range" id="spread" min="-30" class="input__value" max="50" value="0">
+                        <label for="spread"></label>
+                    </div>
+
+                    <div class="input__box">
+                        <label for="color">Shadow Color</label>
+                        <input type="color" id="color" value="#b2ccfd">
+                    </div>
+
+                    <div class="input__box">
+                        <label for="bg-color">Elements Color</label>
+                        <input type="color" id="bg-color" value="#fed4d0">
+                    </div>
+
+
+                    <div class="generate__inset-shadow">
+                        <label for="inset" class="label-container">Inset
+                            <input type="radio" id="inset" name="radio" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="outset" class="label-container">Outset
+                            <input type="radio" id="outset" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="generate__right-side col-8">
+                    <div class="generate__result">
+                        <div class="generate__parent-box">
+                            <div class="generate__box"></div>
+                        </div>
+                        <div class="generate__result-box">
+                            <span class="generate__shadow-result"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
+
+
+
+<!--.shadow-result{-->
+<!--    border-radius: 10px;-->
+<!--    background-color: white;-->
+<!--}-->
+<!--.shadow-result-box{-->
+<!--    width: 600px;-->
+<!--    text-align: center;-->
+<!--    height: 135px;-->
+<!--    padding: 15px;-->
+<!--    line-height: 35px;-->
+<!--    margin: 0 auto;-->
+<!--    font-size: 18px;-->
+<!--    background-color: #ffb5a973;-->
+<!--    color: #f58f81;-->
+<!--}-->
+
