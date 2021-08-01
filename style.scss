@@ -94,6 +94,10 @@ a {
 // .generate settings
 
 .generate {
+  &__shadow-result{
+    font-size: 16px;
+    line-height: 40px;
+  }
   &__settings-title{
     font-size: 15px;
     font-weight: 300;
@@ -132,7 +136,7 @@ a {
     margin: 50px;
     width: 200px;
     height: 200px;
-    background-color: #f58f81;
+    background-color: rgba(66, 238, 7, 0.69);
   }
 
   &__result-box{
