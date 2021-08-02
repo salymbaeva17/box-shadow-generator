@@ -20,7 +20,7 @@ boxBgColor.oninput = generateBoxBackgroundColor
 inset.oninput = generateBoxShadow
 outset.oninput = generateBoxShadow
 
-function generateBoxBackgroundColor (){
+function generateBoxBackgroundColor () {
     box.style.backgroundColor = boxBgColor.value
 }
 generateBoxBackgroundColor()
