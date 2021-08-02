@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Box-Shadow Generator</title>
     <link rel="icon" href="./images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -30,33 +29,48 @@
                 <div class="generate__left-side col-4">
                     <h1 class="generate__title">Set your generator shadows:</h1>
 
-                    <p class="generate__settings-title">Elements Border Radius</p>
+                    <p class="generate__settings-title">Elements Border Radius
+                        <span class=" input__value r1-value"></span>
+                    </p>
+
                     <div class="input__box">
-                        <input type="range" id="r1" value="0" class="input__value" max="50">
+                        <input type="range" id="r1" value="0" max="50">
                         <label for="r1"></label>
                     </div>
 
-                    <p class="generate__settings-title">Offset X</p>
+                    <p class="generate__settings-title">Offset X
+                        <span class=" input__value h-length"></span>
+                    </p>
+
                     <div class="input__box">
-                        <input type="range" id="offsetX" min="-50" class="input__value" max="50" value="0">
+                        <input type="range" id="offsetX" min="-50" max="50" value="0">
                         <label for="offsetX"></label>
                     </div>
 
-                    <p class="generate__settings-title">Offset Y</p>
+                    <p class="generate__settings-title">Offset Y
+                        <span class="input__value v-length"></span>
+                    </p>
+
                     <div class="input__box">
-                        <input type="range" id="offsetY" min="-50" class="input__value" max="50" value="0">
+                        <input type="range" id="offsetY" min="-50" max="50" value="0">
                         <label for="offsetY"></label>
                     </div>
 
-                    <p class="generate__settings-title">Blur Radius</p>
+                    <p class="generate__settings-title">Blur Radius
+                        <span class="input__value blur-radius"></span>
+                    </p>
+
                     <div class="input__box">
-                        <input type="range" id="blur" class="input__value" max="50" value="0">
+                        <input type="range" id="blur" max="50" value="0">
                         <label for="blur"></label>
                     </div>
 
-                    <p class="generate__settings-title">Spread Radius</p>
+                    <p class="generate__settings-title">Spread Radius
+                        <span class="input__value spread-radius"></span>
+                    </p>
+
                     <div class="input__box">
-                        <input type="range" id="spread" min="-30" class="input__value" max="50" value="0">
+                        <input type="range" id="spread" min="-50" max="50" value="0">
                         <label for="spread"></label>
                     </div>
 
@@ -97,7 +111,6 @@
         </div>
     </section>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 <script src="./script.js"></script>
 </body>
