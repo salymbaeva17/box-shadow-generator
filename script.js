@@ -43,11 +43,11 @@ function generateBoxShadow(){
     } else{
         type = ""
     }
-    blurRadius.textContent = blur.value
-   spreadRadius.textContent = spread.value
-    hLength.textContent = offsetX.value
-    vLength.textContent = offsetY.value
-    borderRadius.textContent = r1.value
+    blurRadius.textContent = blur.value + "px"
+   spreadRadius.textContent = spread.value + "px"
+    hLength.textContent = offsetX.value + "px"
+    vLength.textContent = offsetY.value + "px"
+    borderRadius.textContent = r1.value + "%"
     shadowResult.innerHTML = `box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} ${type};`
     shadowResult.innerHTML = shadowResult.innerHTML +  `<br> -webkit-box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} ${type};`
     shadowResult.innerHTML = shadowResult.innerHTML +  `<br> -moz-box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} ${type};`
